@@ -1,0 +1,24 @@
+<script>
+    /* faça um programa para ler um número e uma tratativa conforme segue:
+    2 <= x < 8 2x
+    8 <= x < 15 x²
+    15 <= x < 90 3x */
+
+    // ENTRADA
+    const numero = prompt(`Informe um número:`);
+
+    // PROCESSAMENTO E SAÍDA
+    let resultado;
+    if (2 <= numero && numero < 8) {
+        resultado = numero * 2;
+        alert(`${resultado}`);
+    } else if (8 <= numero && numero < 15) {
+        resultado = numero * numero;
+        alert(`${resultado}`);
+    } else if (15 <= numero  && numero < 90) {
+        resultado = numero * 3;
+        alert(`${resultado}`);
+    } else {
+        alert(`Número Inválido!`)
+    }
+</script>
